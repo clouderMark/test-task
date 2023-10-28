@@ -11,30 +11,50 @@
   <body>
     <form class="feedback-form" novalidate>
       <h2 class="feedback-form__header">Для связи с нами, пожайлуста, заполните форму:</h2>
-      <div class="feedback-form__container">
+      <div class="feedback-form__input-wrapper">
+        <p class="feedback-form__helper visually-hidden">
+          Возможно Вы забыли указать фамилию или имя
+        </p>
         <input
           type="text"
           class="feedback-form__input feedback-form__input--name"
-          placeholder="Пётр Поликарпович"
+          placeholder="Пётр Поликарпов"
+          required
         />
+      </div>
+      <div class="feedback-form__input-wrapper">
+        <p class="feedback-form__helper visually-hidden">
+          Возможно Вы забыли указать номер телефон
+        </p>
         <input
           type="text"
           class="feedback-form__input feedback-form__input--phone"
           placeholder="Телефон"
+          required
         />
+      </div>
+      <div class="feedback-form__input-wrapper">
+        <p class="feedback-form__helper visually-hidden">
+          Возможно Вы забыли указать электронную почту
+        </p>
         <input
           type="email"
           class="feedback-form__input feedback-form__input--email"
           placeholder="E-mail"
+          required
         />
+      </div>
+      <div class="feedback-form__input-wrapper">
+        <p class="feedback-form__helper visually-hidden">Возможно Вы забыли написать сообщение</p>
         <textarea
           class="feedback-form__input feedback-form__input--message"
           rows="5"
           placeholder="Сообщение"
+          required
         ></textarea>
-        <div class="feedback-form__button-wrapper">
-          <button class="feedback-form__button">Отправить</button>
-        </div>
+      </div>
+      <div class="feedback-form__button-wrapper">
+        <button class="feedback-form__button">Отправить</button>
       </div>
     </form>
   </body>

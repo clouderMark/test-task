@@ -1,13 +1,22 @@
 .feedback-form {
   margin: 40px;
 
-  &__container {
+  &__input-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+  }
+
+  &__helper {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    box-shadow: 0 0 1px 0 gray;
+    padding: 3px;
   }
 
   &__input {
-    margin-top: 10px;
     padding: 10px;
     font-size: inherit;
     color: rgb(42, 46, 50);

@@ -21,39 +21,47 @@ feedbackForm.addEventListener('submit', (e) => {
 
   if (!isValid.name) {
     name.classList.add('feedback-form__input--error');
+    name.previousElementSibling.classList.remove('visually-hidden');
   }
   if (!isValid.phone) {
     phone.classList.add('feedback-form__input--error');
+    phone.previousElementSibling.classList.remove('visually-hidden');
   }
   if (!isValid.email) {
     email.classList.add('feedback-form__input--error');
+    email.previousElementSibling.classList.remove('visually-hidden');
   }
   if (!isValid.message) {
     message.classList.add('feedback-form__input--error');
+    message.previousElementSibling.classList.remove('visually-hidden');
   }
 });
 
 name.addEventListener('input', () => {
   if (name.classList.contains('feedback-form__input--error')) {
     name.classList.remove('feedback-form__input--error');
+    name.previousElementSibling.classList.add('visually-hidden');
   }
 });
 
 phone.addEventListener('input', () => {
   if (phone.classList.contains('feedback-form__input--error')) {
     phone.classList.remove('feedback-form__input--error');
+    phone.previousElementSibling.classList.add('visually-hidden');
   }
 });
 
 email.addEventListener('input', () => {
   if (email.classList.contains('feedback-form__input--error')) {
     email.classList.remove('feedback-form__input--error');
+    email.previousElementSibling.classList.add('visually-hidden');
   }
 });
 
 message.addEventListener('input', () => {
   if (message.classList.contains('feedback-form__input--error')) {
     message.classList.remove('feedback-form__input--error');
+    message.previousElementSibling.classList.add('visually-hidden');
   }
 });
 
