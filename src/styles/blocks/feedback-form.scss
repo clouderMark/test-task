@@ -21,9 +21,13 @@
     font-size: inherit;
     color: rgb(42, 46, 50);
     font-family: inherit;
+    transition-property: border-color;
+    transition-duration: .3s;
+    border: 1px solid;
+    border-radius: 3px;
 
     &--error {
-      border: 1px solid red;
+      border-color: red;
     }
   }
 
