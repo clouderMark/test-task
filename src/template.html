@@ -9,6 +9,33 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <form class="feedback-form" novalidate>
+      <h2 class="feedback-form__header">Для связи с нами, пожайлуста, заполните форму:</h2>
+      <div class="feedback-form__container">
+        <input
+          type="text"
+          class="feedback-form__input feedback-form__input--name"
+          placeholder="Пётр Поликарпович"
+        />
+        <input
+          type="text"
+          class="feedback-form__input feedback-form__input--phone"
+          placeholder="Телефон"
+        />
+        <input
+          type="email"
+          class="feedback-form__input feedback-form__input--email"
+          placeholder="E-mail"
+        />
+        <textarea
+          class="feedback-form__input feedback-form__input--message"
+          rows="5"
+          placeholder="Сообщение"
+        ></textarea>
+        <div class="feedback-form__button-wrapper">
+          <button class="feedback-form__button">Отправить</button>
+        </div>
+      </div>
+    </form>
   </body>
 </html>

@@ -1,0 +1,44 @@
+.feedback-form {
+  margin: 40px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: inherit;
+    color: rgb(42, 46, 50);
+    font-family: inherit;
+
+    &--error {
+      border: 1px solid red;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    background-color: tomato;
+    color: $background-color;
+    border-radius: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      box-shadow: inset 0 0 4px 0 green;
+    }
+
+    &:active {
+      background-color: yellowgreen;
+    }
+  }
+}

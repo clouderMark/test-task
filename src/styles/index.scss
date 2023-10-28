@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'variables';
+@import './blocks/border-box';
 
 html {
   font-size: $font-size;
@@ -14,3 +15,4 @@ body {
   max-width: $page-width;
 }
 
+@import './blocks/feedback-form';
