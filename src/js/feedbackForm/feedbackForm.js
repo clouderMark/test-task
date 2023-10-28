@@ -1,10 +1,18 @@
 import { validateForm } from './validateForm';
+import IMask from 'imask';
 
 const feedbackForm = document.querySelector('.feedback-form');
 const name = feedbackForm.querySelector(`.feedback-form__input--name`);
 const phone = feedbackForm.querySelector(`.feedback-form__input--phone`);
 const email = feedbackForm.querySelector(`.feedback-form__input--email`);
 const message = feedbackForm.querySelector(`.feedback-form__input--message`);
+
+const maskOptions = {
+  mask: '+375(00) 000-00-00',
+  lazy: false,
+};
+
+new IMask(phone, maskOptions);
 
 feedbackForm.addEventListener('submit', (e) => {
   e.preventDefault();
