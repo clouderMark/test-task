@@ -14,6 +14,10 @@ body {
   margin: auto;
   max-width: $page-width;
 }
+
+@import './blocks/button.scss';
+@import './blocks/d-f-r-r';
 @import './blocks/visually-hidden';
 @import './blocks/feedback-form';
 @import './blocks/notice';
+@import './blocks/modal';

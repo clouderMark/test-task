@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <div class="d-f-r-r">
+      <button class="modal__open">открыть модальное окно</button>
+    </div>
     <form class="feedback-form" novalidate>
       <h2 class="feedback-form__header">Для связи с нами, пожайлуста, заполните форму:</h2>
       <div class="feedback-form__input-wrapper">
@@ -18,7 +21,7 @@
         <input
           type="text"
           class="feedback-form__input feedback-form__input--name"
-          placeholder="Пётр Поликарпов"
+          placeholder="Поликарбонад Поликарбонадов"
           required
         />
       </div>
@@ -53,13 +56,19 @@
           required
         ></textarea>
       </div>
-      <div class="feedback-form__button-wrapper">
+      <div class="d-f-r-r">
         <button class="feedback-form__button">Отправить</button>
       </div>
     </form>
     <section class="notice visually-hidden">
       <h2 class="notice__title"></h2>
       <p class="notice__message"></p>
+    </section>
+    <section class="modal">
+      <div class="modal__content">
+        <h2 class="modal__header"></h2>
+        <p class="modal__text"></p>
+      </div>
     </section>
   </body>
 </html>
