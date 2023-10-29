@@ -62,32 +62,13 @@ feedbackForm.addEventListener('submit', async (e) => {
   }
 });
 
-name.addEventListener('input', () => {
-  if (name.classList.contains(ERRORINPUTCLASS)) {
-    name.classList.remove(ERRORINPUTCLASS);
-    name.previousElementSibling.classList.add(VISUALLYHIDDEN);
-  }
-});
-
-phone.addEventListener('input', () => {
-  if (phone.classList.contains(ERRORINPUTCLASS)) {
-    phone.classList.remove(ERRORINPUTCLASS);
-    phone.previousElementSibling.classList.add(VISUALLYHIDDEN);
-  }
-});
-
-email.addEventListener('input', () => {
-  if (email.classList.contains(ERRORINPUTCLASS)) {
-    email.classList.remove(ERRORINPUTCLASS);
-    email.previousElementSibling.classList.add(VISUALLYHIDDEN);
-  }
-});
-
-message.addEventListener('input', () => {
-  if (message.classList.contains(ERRORINPUTCLASS)) {
-    message.classList.remove(ERRORINPUTCLASS);
-    message.previousElementSibling.classList.add(VISUALLYHIDDEN);
-  }
-});
+[name, phone, email, message].forEach((el) => {
+  el.addEventListener('input', () => {
+    if (el.classList.contains(ERRORINPUTCLASS)) {
+      el.classList.remove(ERRORINPUTCLASS);
+      el.previousElementSibling.classList.add(VISUALLYHIDDEN);
+    }
+  });
+})
 
 export default feedbackForm;
